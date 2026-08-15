@@ -1,12 +1,12 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "2021e2bc5eadbb271e1abe1ade805bd82d09d8767052f5a595d76f67971e6e9f"
+  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "216f5984ae34f524a89b11442ad9ea2c2c6f6b229c0fa2506c0b9d8708c2e2f1"
   license "Apache-2.0"
 
-  depends_on "python@3.13"
   depends_on "dtach"
+  depends_on "python@3.13"
   depends_on "ripgrep"
 
   on_macos do
@@ -30,7 +30,6 @@ class Termdeck < Formula
         url "https://files.pythonhosted.org/packages/a2/ef/cc994494bf7d97e41833f6ff55c24f535e4d527a10370b9631737e9c2f00/websockets-17.0.1-cp313-cp313-macosx_11_0_arm64.whl"
         sha256 "734d20364dc2cfe03674883cafcf580b6e431c5ce42b476312b9285310230cf9"
       end
-
     end
 
     on_intel do
@@ -53,7 +52,6 @@ class Termdeck < Formula
         url "https://files.pythonhosted.org/packages/db/99/e1cfaf419bb3b2fcfd6792a846f1d936293132b0b9a56530ced016c83c7b/websockets-17.0.1-cp313-cp313-macosx_10_13_x86_64.whl"
         sha256 "c1c118a6b0e25bfc9a6802075d748fa6321714ffbdf3c88d29d9a0e3c7386c75"
       end
-
     end
   end
 
@@ -154,7 +152,7 @@ class Termdeck < Formula
 
   def install
     venv_root = libexec
-    system Formula["python@3.13"].opt_bin/"python3.13", "-m", "venv", venv_root
+    system formula_opt_bin("python@3.13")/"python3.13", "-m", "venv", venv_root
     pip = venv_root/"bin/pip"
     system pip, "install", "--no-deps", "--no-index", *resources.map(&:cached_download)
     system pip, "install", "--no-deps", "--no-build-isolation", buildpath

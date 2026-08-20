@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "b8fce7c83fdb2e31f91205ed3a6e13a48bcdc38debe0762077f8179d44c02c3f"
+  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "ee318c3e798236578c0e230d97e0d57a816387bc4cfb344a8283cb8b8facf58d"
   license "Apache-2.0"
   depends_on :macos
 
@@ -180,7 +180,13 @@ class Termdeck < Formula
     venv_root = libexec
     system formula_opt_bin("python@3.13")/"python3.13", "-m", "venv", venv_root
     pip = venv_root/"bin/pip"
-    system pip, "install", "--no-deps", "--no-index", *resources.map(&:cached_download)
+    wheelhouse = buildpath/"wheelhouse"
+    wheelhouse.mkpath
+    resources.each do |resource|
+      wheel_name = resource.cached_download.basename.to_s.sub(/\A[0-9a-f]+--/, "")
+      cp resource.cached_download, wheelhouse/wheel_name
+    end
+    system pip, "install", "--no-deps", "--no-index", *wheelhouse.children
     system pip, "install", "--no-deps", "--no-build-isolation", buildpath
     bin.install_symlink venv_root/"bin/termdeck"
   end

@@ -1,9 +1,10 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "78d216e7ba49d2a2cf5dade697f9ecc57c82342079a8158dd6322ef8f11f909e"
+  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "b8fce7c83fdb2e31f91205ed3a6e13a48bcdc38debe0762077f8179d44c02c3f"
   license "Apache-2.0"
+  depends_on :macos
 
   depends_on "dtach"
   depends_on "python@3.13"
@@ -38,6 +39,11 @@ class Termdeck < Formula
     end
 
     on_intel do
+      resource "msgpack" do
+        url "https://files.pythonhosted.org/packages/b0/ac/dcddcab6f6c20ecb387ca5e980371cdb3f87ff69aeca388be97eebc4c074/msgpack-1.2.1-cp313-cp313-macosx_10_13_x86_64.whl"
+        sha256 "0a70e3cf2804a300d921bb0940426e35f4e489a23adfb77a808892241db0a064"
+      end
+
       resource "pydantic-core" do
         url "https://files.pythonhosted.org/packages/51/a2/5d30b469c5267a17b39dec53208222f76a8d351dfac4af661888c5aee77d/pydantic_core-2.46.4-cp313-cp313-macosx_10_12_x86_64.whl"
         sha256 "5d5902252db0d3cedf8d4a1bc68f70eeb430f7e4c7104c8c476753519b423008"
@@ -111,8 +117,8 @@ class Termdeck < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl"
-    sha256 "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
+    url "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl"
+    sha256 "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
   end
 
   resource "packaging" do
@@ -166,8 +172,8 @@ class Termdeck < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/dc/2b/ebd108734a8204c6b4b93c681c9a38c5273b3ccd5d129fee4ffc1d97772c/uvicorn-0.52.3-py3-none-any.whl"
-    sha256 "116af2710dbf47c80f463cd20ee4884b6662f4c9f227d797ddc7279d2fcc2c7c"
+    url "https://files.pythonhosted.org/packages/f1/79/4a20b54ab0491485ccd8c077db2d39187c7f12b3e15485d38a7be37c81b4/uvicorn-0.52.4-py3-none-any.whl"
+    sha256 "f86e41a149d7d05a9969337e3946a9c171c06a5d42680896daaba624aeac8da1"
   end
 
   def install

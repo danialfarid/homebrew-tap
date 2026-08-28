@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.6.3.tar.gz"
-  sha256 "b4741a1f52f973332fa26b8bade52261031c49e851e7b2f2fe3895a70ad9033c"
+  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "d9a0b5c6f3bd7beb6acbf239fdf30ccaabf46c6d6cc89612b0763f76d1caeb0d"
   license "Apache-2.0"
   depends_on :macos
 
@@ -13,8 +13,8 @@ class Termdeck < Formula
   on_macos do
     on_arm do
       resource "msgpack" do
-        url "https://files.pythonhosted.org/packages/64/71/fbcfa83a1d6a9c6091942d1cfd070962244664b87427a9a49a6897b1b219/msgpack-1.2.1-cp313-cp313-macosx_11_0_arm64.whl"
-        sha256 "491cc39455ca765fad51fb451bf2915eb2cf41192ab5801ce8d67c1d614fe056"
+        url "https://files.pythonhosted.org/packages/33/54/10c6c16ddba8a5112e3680176b838e3694e4aad7284f9daa6d6d70d98817/msgpack-1.2.2-cp313-cp313-macosx_11_0_arm64.whl"
+        sha256 "1e8cdd1f3e7cc52c751092a9bf740e81e6919ab109cd376ae2d965dad0bbae34"
       end
 
       resource "pydantic-core" do
@@ -33,15 +33,15 @@ class Termdeck < Formula
       end
 
       resource "websockets" do
-        url "https://files.pythonhosted.org/packages/a2/ef/cc994494bf7d97e41833f6ff55c24f535e4d527a10370b9631737e9c2f00/websockets-17.0.1-cp313-cp313-macosx_11_0_arm64.whl"
-        sha256 "734d20364dc2cfe03674883cafcf580b6e431c5ce42b476312b9285310230cf9"
+        url "https://files.pythonhosted.org/packages/46/69/66e5b7d01445e0eeb1d4ab419c30315f2c90cf7a8a8cd4ecc47f894dba54/websockets-17.1-cp313-cp313-macosx_11_0_arm64.whl"
+        sha256 "fd8f47dbf2e8adb15c847215f83436de3fdb120b51fdae0fbbdf69fd97a3ad80"
       end
     end
 
     on_intel do
       resource "msgpack" do
-        url "https://files.pythonhosted.org/packages/b0/ac/dcddcab6f6c20ecb387ca5e980371cdb3f87ff69aeca388be97eebc4c074/msgpack-1.2.1-cp313-cp313-macosx_10_13_x86_64.whl"
-        sha256 "0a70e3cf2804a300d921bb0940426e35f4e489a23adfb77a808892241db0a064"
+        url "https://files.pythonhosted.org/packages/1f/eb/42f31c5a48811787ff59a9869721f70a49654d65ab6c455f4463c39b044e/msgpack-1.2.2-cp313-cp313-macosx_10_13_x86_64.whl"
+        sha256 "8b2a281b556f120a43e591ea39915741b7ad54d4727b9c4350a0a11692252533"
       end
 
       resource "pydantic-core" do
@@ -60,8 +60,8 @@ class Termdeck < Formula
       end
 
       resource "websockets" do
-        url "https://files.pythonhosted.org/packages/db/99/e1cfaf419bb3b2fcfd6792a846f1d936293132b0b9a56530ced016c83c7b/websockets-17.0.1-cp313-cp313-macosx_10_13_x86_64.whl"
-        sha256 "c1c118a6b0e25bfc9a6802075d748fa6321714ffbdf3c88d29d9a0e3c7386c75"
+        url "https://files.pythonhosted.org/packages/d0/2a/c1b006fc861695d2aa4e35327b842015ce1d98cf8f99241829b3d6460bfc/websockets-17.1-cp313-cp313-macosx_10_13_x86_64.whl"
+        sha256 "829dba1bc049779de9b332088c1a6a9858e96bd67e50b6b644a95e02b67836bc"
       end
     end
   end
@@ -87,8 +87,8 @@ class Termdeck < Formula
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl"
-    sha256 "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76"
+    url "https://files.pythonhosted.org/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl"
+    sha256 "255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360"
   end
 
   resource "fastapi" do

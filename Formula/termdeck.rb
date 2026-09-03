@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.8.1.tar.gz"
-  sha256 "be8c8692384ce3b1b09982fff17a404ae14ae14ce61c603bd6a3671fbe4e0f60"
+  url "https://github.com/danialfarid/termdeck/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "3d6bc2d0755f50dde337990dd1780d16057457f00e7fba8409d9f3803294d40e"
   license "Apache-2.0"
   depends_on :macos
 
@@ -77,8 +77,8 @@ class Termdeck < Formula
   end
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl"
-    sha256 "9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494"
+    url "https://files.pythonhosted.org/packages/21/a6/2b21ce5ebe4d8938a247c9b0dbb7271566ae559b01795c83ea4bb2660ed7/anyio-4.15.0-py3-none-any.whl"
+    sha256 "7ecd9937369ffce8bba0b5ccb9b3a9507b101b0ed50256aecfbab27e6c2acb99"
   end
 
   resource "certifi" do

@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.16.2/termdeck_agents-0.16.2.tar.gz"
-  sha256 "6e38baf3e260b6572c51fe741329e6d1386f70e76d74a73b1820efb179dba075"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.17.0/termdeck_agents-0.17.0.tar.gz"
+  sha256 "5c126763b190d61a6cb4520d39e88722010222371f5805304c244cbd747e416c"
   license "Apache-2.0"
   depends_on :macos
 
@@ -102,8 +102,8 @@ class Termdeck < Formula
   end
 
   resource "hatchling" do
-    url "https://files.pythonhosted.org/packages/a9/84/1798b6d85ecde0e31546004efd25c5de1b1f49250644a60cce460e12593a/hatchling-1.32.0-py3-none-any.whl"
-    sha256 "0e17c9c3b9aa7c625acc8d0f5b622f107d5049af9ecf5ada4de1aada5be7cdbc"
+    url "https://files.pythonhosted.org/packages/f6/89/268c7e4b2bcf2071047366c4c3b4b0e89f640e13ea7bfdaf1df6c40e5140/hatchling-1.32.3-py3-none-any.whl"
+    sha256 "d05b350af5d9aa5bf7b34b434a45a742b99e67d0b48ea67d240cfeab98e13945"
   end
 
   resource "httpcore" do
@@ -117,8 +117,8 @@ class Termdeck < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/57/b0/0e52c878c53f245edd3a11020f20979b3f490f245af532c7cae3027754b5/idna-3.19-py3-none-any.whl"
-    sha256 "815e7be7a7806d54abb586dc943addc79e8b2ee16915059658cbeff4b1b43bf4"
+    url "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl"
+    sha256 "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
   end
 
   resource "packaging" do

@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.19.7/termdeck_agents-0.19.7.tar.gz"
-  sha256 "e849b476e3d143d2ce88f7bedb9089bc4a9100396957c355db4f9e9028ca2296"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.20.0/termdeck_agents-0.20.0.tar.gz"
+  sha256 "69817e5fec237c2772b93152ebf82af9730c670f573932b9713a9572e88e8239"
   license "Apache-2.0"
   depends_on :macos
 
@@ -157,8 +157,8 @@ class Termdeck < Formula
   end
 
   resource "trove-classifiers" do
-    url "https://files.pythonhosted.org/packages/7c/a4/81502f486f01db95bc8320646a8a12511f5e556cb63d5e224d91816605c4/trove_classifiers-2026.6.1.19-py3-none-any.whl"
-    sha256 "ab4c4ec93cc4a4e7815fa759906e05e6bb3f2fbd92ea0f897288c6a43efd15b3"
+    url "https://files.pythonhosted.org/packages/30/81/0da8afb52a71d0a4f2bd3152357b1a441e393b286374802b9d3addab4ab5/trove_classifiers-2026.9.21.13-py3-none-any.whl"
+    sha256 "8b1ff4f9c191b1040b71c37f1e445ab99732911e3cd91de52838453a854d7a17"
   end
 
   resource "typing-extensions" do

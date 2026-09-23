@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.23.0/termdeck_agents-0.23.0.tar.gz"
-  sha256 "9c77a46bb2791cb8e6a2735b2f1223ae228d4ca413f0779e917fa497395394b7"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.24.0/termdeck_agents-0.24.0.tar.gz"
+  sha256 "26ea91fc94a6bc71fe6e4df894ab13fded8cda00addfbb28ffbada7e0f93553e"
   license "Apache-2.0"
   depends_on :macos
 
@@ -147,8 +147,8 @@ class Termdeck < Formula
   end
 
   resource "starlette" do
-    url "https://files.pythonhosted.org/packages/c8/cb/6a6a47d5b464bd08695d254f3da6e7986cc70c9fa5d778eda57538edfe56/starlette-1.6.0-py3-none-any.whl"
-    sha256 "a86dd39d14bb45f85a3d18525215a9ef0cfd1f192ac793220e72598c90335f0c"
+    url "https://files.pythonhosted.org/packages/4e/d6/1ec1b290f9e0fb067899b61e1d37a30c923068bad260b216dbe37a7d2967/starlette-1.7.0-py3-none-any.whl"
+    sha256 "67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e"
   end
 
   resource "tomlkit" do

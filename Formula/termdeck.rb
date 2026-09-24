@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.24.0/termdeck_agents-0.24.0.tar.gz"
-  sha256 "26ea91fc94a6bc71fe6e4df894ab13fded8cda00addfbb28ffbada7e0f93553e"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.24.1/termdeck_agents-0.24.1.tar.gz"
+  sha256 "d37e42ea531760a2983a4dfc07ae3da7757331223b2048123ddeb369b9e99e75"
   license "Apache-2.0"
   depends_on :macos
 

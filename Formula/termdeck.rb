@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.26.2/termdeck_agents-0.26.2.tar.gz"
-  sha256 "e15992725006fd2d9ff563054a68fffa4379e0843745c85ac61adb108bf511e1"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.27.0/termdeck_agents-0.27.0.tar.gz"
+  sha256 "e2d7ce5a4c8f35e59706ae5d01886f97980ab0e332cfafe162207e3187170d8f"
   license "Apache-2.0"
   depends_on :macos
 
@@ -32,6 +32,11 @@ class Termdeck < Formula
         sha256 "a175f755fc2279e0b7312c0035d52e27211a5bc39719dd529625b1930917345b"
       end
 
+      resource "wcwidth" do
+        url "https://files.pythonhosted.org/packages/33/7c/c7bb03da54de7ac5a08753e186b963f91847b04ed8ae5be136a4d5f52b75/wcwidth-0.9.1-cp310-abi3-macosx_11_0_arm64.whl"
+        sha256 "40d936d72c9bdc10df43f93a8be502bc5024b487259139f66a328722c07f34a9"
+      end
+
       resource "websockets" do
         url "https://files.pythonhosted.org/packages/46/69/66e5b7d01445e0eeb1d4ab419c30315f2c90cf7a8a8cd4ecc47f894dba54/websockets-17.1-cp313-cp313-macosx_11_0_arm64.whl"
         sha256 "fd8f47dbf2e8adb15c847215f83436de3fdb120b51fdae0fbbdf69fd97a3ad80"
@@ -57,6 +62,11 @@ class Termdeck < Formula
       resource "watchdog" do
         url "https://files.pythonhosted.org/packages/85/83/cdf13902c626b28eedef7ec4f10745c52aad8a8fe7eb04ed7b1f111ca20e/watchdog-6.0.0-cp313-cp313-macosx_10_13_x86_64.whl"
         sha256 "76aae96b00ae814b181bb25b1b98076d5fc84e8a53cd8885a318b42b6d3a5134"
+      end
+
+      resource "wcwidth" do
+        url "https://files.pythonhosted.org/packages/48/7c/130de33c0a7f6efecee28fef5711fc1f8d55ac33885a6b85f4f6689004ba/wcwidth-0.9.1-cp310-abi3-macosx_10_9_x86_64.whl"
+        sha256 "10b00ba23482e352f874d2e8135e7ace9da838646c7dd800566246bbd46125ff"
       end
 
       resource "websockets" do
@@ -139,6 +149,11 @@ class Termdeck < Formula
   resource "pydantic" do
     url "https://files.pythonhosted.org/packages/eb/47/c95ffc2009878c7aac0c5e08528022dcb885933252a88b5f170058014464/pydantic-2.13.5-py3-none-any.whl"
     sha256 "346a034f080da3755d8e9cb5e00e8b07de1d39e4f6e2c87d8ab7cafa0b269a73"
+  end
+
+  resource "pyte" do
+    url "https://files.pythonhosted.org/packages/59/d0/bb522283b90853afbf506cd5b71c650cf708829914efd0003d615cf426cd/pyte-0.8.2-py3-none-any.whl"
+    sha256 "85db42a35798a5aafa96ac4d8da78b090b2c933248819157fc0e6f78876a0135"
   end
 
   resource "python-multipart" do

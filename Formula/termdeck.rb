@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.28.0/termdeck_agents-0.28.0.tar.gz"
-  sha256 "9de8f2e0349d3b8036555cb95d73afcdf0004001c5a5db503f6b46f19985493b"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.29.0/termdeck_agents-0.29.0.tar.gz"
+  sha256 "ebaa93ed93f788f76b18365cf17019cc931dd205865773f6140d954f99d129dc"
   license "Apache-2.0"
   depends_on :macos
 
@@ -187,8 +187,8 @@ class Termdeck < Formula
   end
 
   resource "uvicorn" do
-    url "https://files.pythonhosted.org/packages/76/18/0eea75741ee812e9f598b687619ce2454f6c3a1c5cd21ea990ec6bd26f45/uvicorn-0.53.0-py3-none-any.whl"
-    sha256 "e8dca71ec86dce5f04e333f0d56cdedf942446e6643b9cea1af0d6d3a02cb03e"
+    url "https://files.pythonhosted.org/packages/38/0c/b54a4fdd7f90a3af8b02ebc9ce6712c2c208b7926a2f7bad95c33ebbe943/uvicorn-0.54.0-py3-none-any.whl"
+    sha256 "505bdb0f318731d45f1f712071fc781a8981f6847a31c902c9f5e652d4f67faf"
   end
 
   def install

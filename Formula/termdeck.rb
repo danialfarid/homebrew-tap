@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.31.0/termdeck_agents-0.31.0.tar.gz"
-  sha256 "5b76f8a2ab881ca22e10615d57a7a88757d80f399a33caaa3c421f0f3801905e"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.32.0/termdeck_agents-0.32.0.tar.gz"
+  sha256 "c2601586fe85fdc1b09c447b5c0e5ecea4eba7687dc32496c03c1d6f58e6ae43"
   license "Apache-2.0"
   depends_on :macos
 
@@ -13,8 +13,8 @@ class Termdeck < Formula
   on_macos do
     on_arm do
       resource "msgpack" do
-        url "https://files.pythonhosted.org/packages/33/54/10c6c16ddba8a5112e3680176b838e3694e4aad7284f9daa6d6d70d98817/msgpack-1.2.2-cp313-cp313-macosx_11_0_arm64.whl"
-        sha256 "1e8cdd1f3e7cc52c751092a9bf740e81e6919ab109cd376ae2d965dad0bbae34"
+        url "https://files.pythonhosted.org/packages/05/e6/df7f2c9ebb94760113debbcea2bd3afe5fdab88a4f7bec1b618755517460/msgpack-1.2.3-cp313-cp313-macosx_11_0_arm64.whl"
+        sha256 "db84203b13aecc222f465061397fdd5b53b7ae73d2c95ffc1c8dc5be0153a709"
       end
 
       resource "pydantic-core" do
@@ -45,8 +45,8 @@ class Termdeck < Formula
 
     on_intel do
       resource "msgpack" do
-        url "https://files.pythonhosted.org/packages/1f/eb/42f31c5a48811787ff59a9869721f70a49654d65ab6c455f4463c39b044e/msgpack-1.2.2-cp313-cp313-macosx_10_13_x86_64.whl"
-        sha256 "8b2a281b556f120a43e591ea39915741b7ad54d4727b9c4350a0a11692252533"
+        url "https://files.pythonhosted.org/packages/1f/8b/3824d65e912e925d09ce30d9130fa9970d6d2855d7888b13639a6604967f/msgpack-1.2.3-cp313-cp313-macosx_10_13_x86_64.whl"
+        sha256 "21bfa4d2aa0b04c1806ef778a1199e9e53ea2441bcbf284420a32083896320b8"
       end
 
       resource "pydantic-core" do
@@ -102,8 +102,8 @@ class Termdeck < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/cb/03/10388a42375ee7e4ac9b94eb2c5c569c8b5795e377e701c9ac3ad63de890/fastapi-0.141.1-py3-none-any.whl"
-    sha256 "bfb91aa2d334c61cb35ba9a116fc123b3d3df31640b801cf57a7a78ec3f603b3"
+    url "https://files.pythonhosted.org/packages/a0/b6/78aaf9141fb46742928c113f3cf6ef2259d538cb02b604b7656c1dc9883c/fastapi-0.142.2-py3-none-any.whl"
+    sha256 "bd5f4d81f1e93a88bcd77caf4dfe3c2dbffc3805407a0007e9a114c18b3a670b"
   end
 
   resource "h11" do
@@ -129,6 +129,11 @@ class Termdeck < Formula
   resource "idna" do
     url "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl"
     sha256 "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+  end
+
+  resource "opentelemetry-api" do
+    url "https://files.pythonhosted.org/packages/44/b9/040d1a1c7836922828e6480cd2366bb8fe0ebf75b413d2bb51a9b0e7f78f/opentelemetry_api-1.45.0-py3-none-any.whl"
+    sha256 "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3"
   end
 
   resource "packaging" do

@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.35.0/termdeck_agents-0.35.0.tar.gz"
-  sha256 "ef2a9721fb471a01d47315e5b41fc4bd9e5a5a2fd40f588a7eb0e2cc64922eb3"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.35.2/termdeck_agents-0.35.2.tar.gz"
+  sha256 "b5937d3021ff1b7bb61434309cf9376bbfed533b7e03aea93945e7d69f13cfef"
   license "Apache-2.0"
   depends_on :macos
 
@@ -48,13 +48,13 @@ class Termdeck < Formula
       end
 
       resource "wcwidth" do
-        url "https://files.pythonhosted.org/packages/a0/07/cb6940e81134b7ed25fa312ee9ab536a63db0793b149f88a90e603ceace9/wcwidth-0.9.2-cp310-abi3-macosx_11_0_arm64.whl"
-        sha256 "ae0800c5339423cc53d33a266ad264b42ba8aaa16d4464f6e6b1bee607f50b17"
+        url "https://files.pythonhosted.org/packages/8b/3c/714eba03905a23a46277cc96d3db8da6bd22d2cc0d09a4dead60a2bd1757/wcwidth-0.9.3-cp310-abi3-macosx_11_0_arm64.whl"
+        sha256 "aab90ab489850f87633922c3064f6d0442d8f6ae5407a62f82bdb1f424179c05"
       end
 
       resource "websockets" do
-        url "https://files.pythonhosted.org/packages/ca/1e/621bb93f35ab7d337be98f1958294437527e2a1797089b5e734ddc5eec5f/websockets-17.2-cp313-cp313-macosx_11_0_arm64.whl"
-        sha256 "cf8811d285acc91216368df7fb55cc8c9bf6fcd90eea42429c7186c7385a12b9"
+        url "https://files.pythonhosted.org/packages/16/df/ab0ed0445d8d81a133c8fed760f3b4f743a2f563804fdbecb2c32fe05d94/websockets-17.3-cp313-cp313-macosx_11_0_arm64.whl"
+        sha256 "fe7a168d805c8a7bf1c2de55b7ab2bc958586bfd88d0e87235a92cac66b590a7"
       end
     end
 
@@ -95,13 +95,13 @@ class Termdeck < Formula
       end
 
       resource "wcwidth" do
-        url "https://files.pythonhosted.org/packages/59/1e/4532a81fb9dfbf4114a816775e0a36c3a64ee1d1f4bba2094e2da50be5dc/wcwidth-0.9.2-cp310-abi3-macosx_10_9_x86_64.whl"
-        sha256 "7ef5a940bd5e30bac6e721f1a48fce0cd7bb3ece19e9c5d139e72c76c35cfd07"
+        url "https://files.pythonhosted.org/packages/5c/6d/eec61b5edeb88e3ea2a714184eade38335722c4246d94be567977fc20caa/wcwidth-0.9.3-cp310-abi3-macosx_10_9_x86_64.whl"
+        sha256 "3b119ef60177a92b4f298b80e98464c2922a1fba3ed77fe9a2bcb69edf1b9af4"
       end
 
       resource "websockets" do
-        url "https://files.pythonhosted.org/packages/cd/95/cb8881851abe2662730e6c61cc521b4c96513fdf9103a44f169afce2eba8/websockets-17.2-cp313-cp313-macosx_10_13_x86_64.whl"
-        sha256 "8a829db795e3f87053904493d184b185c8eb1f497c852f434168ec856aa6f997"
+        url "https://files.pythonhosted.org/packages/4e/e8/f1b47d0ced4964ae748931a54347fd27b06b62e8ea7837a9de3aee0c5999/websockets-17.3-cp313-cp313-macosx_10_13_x86_64.whl"
+        sha256 "80578e91764bfca297ddca322c00a3136d993b829e9839e7fa378a19c1fcc25d"
       end
     end
   end
@@ -127,8 +127,8 @@ class Termdeck < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl"
-    sha256 "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775"
+    url "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl"
+    sha256 "42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b"
   end
 
   resource "click" do
@@ -137,8 +137,8 @@ class Termdeck < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/2c/1a/03d246befcf307219bb2161c97d8c5d314f84125bf7dd245730a28589828/fastapi-0.143.3-py3-none-any.whl"
-    sha256 "75e8bd68e2f52f77d29b2879749c257d64de2d85282d25270caf2bfccce5efe5"
+    url "https://files.pythonhosted.org/packages/db/9d/244119e721410c127675c7646cb62d0b2dadfd0c0c52036151d97ccf5f2d/fastapi-0.156.6-py3-none-any.whl"
+    sha256 "5c27f77aa3866fd4e2faf961ba549f4890a22b7eaa5399308d7db6403be80b91"
   end
 
   resource "h11" do
@@ -157,8 +157,8 @@ class Termdeck < Formula
   end
 
   resource "httpcore2" do
-    url "https://files.pythonhosted.org/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl"
-    sha256 "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a"
+    url "https://files.pythonhosted.org/packages/af/c2/ce417c397afa5181f0e3c6ff01a4d01639414e1adef08730d97571297151/httpcore2-2.16.0-py3-none-any.whl"
+    sha256 "5c4358319f2602d984ad93182c9fee5160f22e9da7babdda870a5e7c4e2dc34f"
   end
 
   resource "httpx" do
@@ -167,8 +167,8 @@ class Termdeck < Formula
   end
 
   resource "httpx2" do
-    url "https://files.pythonhosted.org/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl"
-    sha256 "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4"
+    url "https://files.pythonhosted.org/packages/7b/3d/2e4bc4fd1ef9770871669adb348d612a6e4786b303a23f9935b81c48dd60/httpx2-2.16.0-py3-none-any.whl"
+    sha256 "fd2c5d7909e8d86fe92d53020c310ca0e4e431b838c207c5754b9bbf0308d49a"
   end
 
   resource "idna" do
@@ -252,8 +252,8 @@ class Termdeck < Formula
   end
 
   resource "starlette" do
-    url "https://files.pythonhosted.org/packages/c1/b0/5742e4ac7af5eb58ec3470a537a49d7aa507e5539413e504b3a65ef50ba8/starlette-1.8.0-py3-none-any.whl"
-    sha256 "dfdd6b29c26483288088d990eee59631dedadd66ce20d203402a7ca8e3c4656f"
+    url "https://files.pythonhosted.org/packages/f3/93/181df62699d9b5aca1d87e5cfda131dac87e3cdaebf668662f7206ca3470/starlette-1.9.0-py3-none-any.whl"
+    sha256 "fd3f159936e882d06c1108f84688f7cda2cf85fc6a592a50edbd175e882c2ddc"
   end
 
   resource "tomlkit" do

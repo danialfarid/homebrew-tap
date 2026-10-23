@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.35.2/termdeck_agents-0.35.2.tar.gz"
-  sha256 "b5937d3021ff1b7bb61434309cf9376bbfed533b7e03aea93945e7d69f13cfef"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.36.0/termdeck_agents-0.36.0.tar.gz"
+  sha256 "52140edc941f2a02ae289b81550a7fefb0302be04e996f5667ccaa8e8bc7601e"
   license "Apache-2.0"
   depends_on :macos
 
@@ -137,8 +137,8 @@ class Termdeck < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/db/9d/244119e721410c127675c7646cb62d0b2dadfd0c0c52036151d97ccf5f2d/fastapi-0.156.6-py3-none-any.whl"
-    sha256 "5c27f77aa3866fd4e2faf961ba549f4890a22b7eaa5399308d7db6403be80b91"
+    url "https://files.pythonhosted.org/packages/45/2a/101012d82931d9de3855384e1667e49c0e07a0048e3868f9fec1697293a9/fastapi-0.161.1-py3-none-any.whl"
+    sha256 "a1363080cf9aeedecd99f4e1a23669d7e77542227f6536f4d7bbd59f07ecaa94"
   end
 
   resource "h11" do
@@ -217,8 +217,8 @@ class Termdeck < Formula
   end
 
   resource "pycparser" do
-    url "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl"
-    sha256 "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80"
+    url "https://files.pythonhosted.org/packages/b6/ae/315bbeee126a769cbde43cf4908acb4b40408d8bf8bbf334dd7368d8dadf/pycparser-3.12-py3-none-any.whl"
+    sha256 "a076f3f489b39b43ed13563a1dafe42447445bec2e294154ec5c57fcdda4c85e"
   end
 
   resource "pydantic" do

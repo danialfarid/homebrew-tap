@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.36.4/termdeck_agents-0.36.4.tar.gz"
-  sha256 "d880c2addb46b9da2213e9e8d34110339cfa57acb68836e10d5254a6abcb1703"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.36.5/termdeck_agents-0.36.5.tar.gz"
+  sha256 "93ca17fa5648bb5ce1b70176df407060416a78acc902965bcd0d727322edc5f0"
   license "Apache-2.0"
   depends_on :macos
 
@@ -107,8 +107,8 @@ class Termdeck < Formula
   end
 
   resource "annotated-doc" do
-    url "https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl"
-    sha256 "117bac03a25ede5df5440e855b32d556049ca169ead221505badf432fed4b101"
+    url "https://files.pythonhosted.org/packages/cd/f5/3dd85d583e55be76cd02b1fc9bbec771b12d63124b01661d9535ccf8721f/annotated_doc-0.0.6-py3-none-any.whl"
+    sha256 "361ca0950cc7082f53fa69e9328409f40a62c61e57e0a47e1825a08078a58a53"
   end
 
   resource "annotated-types" do
@@ -137,8 +137,8 @@ class Termdeck < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/d6/fb/0dc0f819163bc6b7f9e6802d7d0b1ac180fbbe4e75dbd10655c6a4d77796/fastapi-0.162.2-py3-none-any.whl"
-    sha256 "d0584f9662317e01140df94c64f4bed1d8b059fe35496e30c9c92f70e6e5ff15"
+    url "https://files.pythonhosted.org/packages/3f/6b/0537ac682ac728dbe91f75c16683a985d11812f9930f21a35b756d6df629/fastapi-0.162.4-py3-none-any.whl"
+    sha256 "f093bc306d3958278d30ffd14f3834ca3d9b144fbb898ab5c9b652cf6e75f869"
   end
 
   resource "h11" do

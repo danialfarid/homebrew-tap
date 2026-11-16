@@ -1,8 +1,8 @@
 class Termdeck < Formula
   desc "Browser terminal deck with persistent sessions and claude/codex resume"
   homepage "https://github.com/danialfarid/termdeck"
-  url "https://github.com/danialfarid/termdeck/releases/download/v0.36.5/termdeck_agents-0.36.5.tar.gz"
-  sha256 "93ca17fa5648bb5ce1b70176df407060416a78acc902965bcd0d727322edc5f0"
+  url "https://github.com/danialfarid/termdeck/releases/download/v0.36.6/termdeck_agents-0.36.6.tar.gz"
+  sha256 "b4bc588caa23d870ccb39781d907ec23ea726b734d8b83051cc0f696a2bfbb04"
   license "Apache-2.0"
   depends_on :macos
 
@@ -137,8 +137,8 @@ class Termdeck < Formula
   end
 
   resource "fastapi" do
-    url "https://files.pythonhosted.org/packages/3f/6b/0537ac682ac728dbe91f75c16683a985d11812f9930f21a35b756d6df629/fastapi-0.162.4-py3-none-any.whl"
-    sha256 "f093bc306d3958278d30ffd14f3834ca3d9b144fbb898ab5c9b652cf6e75f869"
+    url "https://files.pythonhosted.org/packages/20/b6/2424da1e40825d3fc54539621811f34e21472499677c9490e4967270e38e/fastapi-0.163.1-py3-none-any.whl"
+    sha256 "68f2d8050f5c3583121c0d203046cc7def5c16a7d6c43a0e7707a8ea610fe2d3"
   end
 
   resource "h11" do
@@ -157,8 +157,8 @@ class Termdeck < Formula
   end
 
   resource "httpcore2" do
-    url "https://files.pythonhosted.org/packages/af/c2/ce417c397afa5181f0e3c6ff01a4d01639414e1adef08730d97571297151/httpcore2-2.16.0-py3-none-any.whl"
-    sha256 "5c4358319f2602d984ad93182c9fee5160f22e9da7babdda870a5e7c4e2dc34f"
+    url "https://files.pythonhosted.org/packages/2a/e8/009c347feac27f8960605aa98d55ed263b5870dd4fd80b82fd1d00d5716c/httpcore2-2.16.2-py3-none-any.whl"
+    sha256 "16051ae2a42f776007543f32de9349a317b23d2cbb4e1456b4bac0e88b87419a"
   end
 
   resource "httpx" do
@@ -167,8 +167,8 @@ class Termdeck < Formula
   end
 
   resource "httpx2" do
-    url "https://files.pythonhosted.org/packages/7b/3d/2e4bc4fd1ef9770871669adb348d612a6e4786b303a23f9935b81c48dd60/httpx2-2.16.0-py3-none-any.whl"
-    sha256 "fd2c5d7909e8d86fe92d53020c310ca0e4e431b838c207c5754b9bbf0308d49a"
+    url "https://files.pythonhosted.org/packages/77/de/8c4306a3d6aa2495111986addf33a9e561eff4c47552e4c4b9251160d0ad/httpx2-2.16.2-py3-none-any.whl"
+    sha256 "f05c13aade4c45dbf1c9060647a1058f0acad62398fad96e741269edb33d46f5"
   end
 
   resource "idna" do
@@ -237,8 +237,8 @@ class Termdeck < Formula
   end
 
   resource "python-multipart" do
-    url "https://files.pythonhosted.org/packages/dd/1b/6b1b4164ec734cac911460ab599bfbe46afedd42c5c9627fe4235942c314/python_multipart-0.0.33-py3-none-any.whl"
-    sha256 "8f16c07b36add9da6b2ee87d3efcaf0a45a6de9c3d0a5dd94e9ccf7675a7bc45"
+    url "https://files.pythonhosted.org/packages/f5/0e/090c52b122d8ec5fa37942c1410fea9cf04ce98bca0c84dde7f0aa11594d/python_multipart-0.0.34-py3-none-any.whl"
+    sha256 "ebacd224bd686eee2f9aa1066a657affe07435a185834e05e5235e2e59173e91"
   end
 
   resource "referencing" do
